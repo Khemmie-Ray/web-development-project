@@ -1,0 +1,66 @@
+p:hover, h5:hover, h6:hover, h4:hover, a:hover, .nav-link:hover, .headings:hover, h3:hover, .bold:hover {
+    color: red;
+}
+
+.navbox-1, .navbox-2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.bold {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.navblock {
+    display: flex;
+}
+
+.navblock-2 {
+    display: flex;
+}
+.footblock-1, .footblock-2 {
+    display: flex;
+    font-size: 10px;
+}
+.headings {
+    font-size: 12px;
+    display: flex;
+}
+.row {
+    padding-top: 15px;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: grey;
+}
+
+.content {
+    background-color: lightgrey;
+}
+
+p {
+    font-size: 14px;
+}
+
+.border {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 6px;
+    background-color: #f9f9f9;
+  }
+
+@Media only screen and (max-width: 1024px) {
+    .row, .footblock-1, .footblock-2, .headings, .navbox-1, .navbox-2, .navblock {
+        display: block;
+    }
+
+    hr, .navblock, .navblock-2 {
+        display: none;
+    }
+
+}
