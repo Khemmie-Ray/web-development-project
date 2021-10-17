@@ -46,21 +46,21 @@ p {
     font-size: 14px;
 }
 
-.border {
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    margin: 6px;
-    background-color: #f9f9f9;
-  }
+.box {
+    width: 100%;
+}
 
-@Media only screen and (max-width: 1024px) {
+@Media only screen and (max-width: 991.98px) {
     .row, .footblock-1, .footblock-2, .headings, .navbox-1, .navbox-2, .navblock {
         display: block;
     }
 
     hr, .navblock, .navblock-2 {
         display: none;
+    }
+
+    iframe {
+        width: 320px;
     }
 
 }
