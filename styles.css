@@ -26,9 +26,15 @@ p:hover, h5:hover, h6:hover, h4:hover, a:hover, .nav-link:hover, .headings:hover
     font-size: 10px;
 }
 .headings {
+    padding-top: 5px;
     font-size: 12px;
     display: flex;
 }
+
+.headings a {
+    border-left: solid 3px #ddd;
+}
+
 .row {
     padding-top: 15px;
     justify-content: space-between;
@@ -50,17 +56,84 @@ p {
     width: 100%;
 }
 
+.flex {
+    display: flex;
+}
+
+.flex img {
+    width: 150px;
+}
+
+.flex p {
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.section {
+    display: flex;
+    align-items: baseline;
+}
+
+.section div {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.section  > div > div:first-child {
+    border-top: solid 4px #ddd;
+    margin-bottom: 1px;
+}
+
+
+.section-d {
+    display: flex;
+    align-items: baseline;
+}
+
+.section-d  div {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.section  > div > div:last-child {
+    border-top: solid 4px #ddd;
+}
+
+.section-d  > div > div:first-child {
+    border-top: solid 4px red;
+    margin-bottom: 1px;
+}
+
+.section-d  > div > div:last-child {
+    border-top: solid 4px red;
+}
+
 @Media only screen and (max-width: 991.98px) {
     .row, .footblock-1, .footblock-2, .headings, .navbox-1, .navbox-2, .navblock {
         display: block;
     }
 
-    hr, .navblock, .navblock-2 {
+     .navblock {
         display: none;
     }
 
     iframe {
-        width: 320px;
+        width: 290px;
     }
 
+    .headings a {
+        border-left: none;
+    }
+
+ .flex  {
+    padding-bottom: 10px;
+}
+
+.section div {
+    margin-left: 2px;
+}
+
+.box {
+    width: 100%;
+}
 }
